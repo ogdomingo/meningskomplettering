@@ -6,7 +6,7 @@
 //
 
 /*
- The code is divided into three parts:
+ The code is divided into two parts:
  1. The actual SentenceView presented in the Exercise
  2. TextBox layout that places each word in the sentence
  */
