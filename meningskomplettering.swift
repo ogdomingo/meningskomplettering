@@ -20,12 +20,13 @@ struct SentenceView: View {
         if let sentence = viewModel.currentExerciseData.exerciseSentence {
             // 1. TextBox with the sentence data
             TextBox{
-                // Hidden view of a single space for
                 ForEach(sentence) { word in
+                    // If the word is not the target word, place it.
                     if !word.isCorrect {
                         Text("\(word.word)")
                             .font(.system(size: 22))
                             .fontWeight(.medium)
+                    // Else place a dotted line that corresponds to the longest word amongst the options
                     } else {
                         ZStack (alignment: .bottom) {
                             // Hidden button with the length of the longest word
@@ -61,6 +62,8 @@ struct SentenceView: View {
 }
 
 // 2. TextBox
+// NOTE: This is very archaic code, I had to learn to use the Layout protocol to achieve the result that I
+// had envisioned.
 
 struct TextBox: Layout {
     func sizeThatFits(
