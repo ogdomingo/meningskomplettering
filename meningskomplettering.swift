@@ -17,10 +17,11 @@ struct SentenceView: View {
     @EnvironmentObject var viewModel: ExerciseViewModel
 
     var body: some View {
+     // Unwrap optional
         if let sentence = viewModel.currentExerciseData.exerciseSentence {
-            // 1. TextBox with the sentence data
+            // Custom layout "TextBox"
             TextBox{
-                ForEach(sentence) { word in
+                ForEach(sentence.words) { word in
                     // If the word is not the target word, place it.
                     if !word.isCorrect {
                         Text("\(word.word)")
