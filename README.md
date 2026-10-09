@@ -1,6 +1,6 @@
 # Meningskomplettering
 
-This code example showcases a sentence completion exercise for my language learning app. 
+This code example showcases a sentence-completion exercise for my language learning app. 
 
 ## Demo
 
