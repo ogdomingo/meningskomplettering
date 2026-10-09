@@ -19,7 +19,7 @@ I enjoyed the process of learning to use the Layout protocol. It was challenging
 
 ### Debugging
 
-I used a randomized background color for each word in the sentence to check where they might be overlapping, and how much space was allocated automatically.
+I used randomized background colors for each word in the sentence to check where they might be overlapping, and how much space was allocated automatically.
 
 ### Improvements
 
