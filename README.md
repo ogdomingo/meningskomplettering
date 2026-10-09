@@ -2,6 +2,10 @@
 
 This code example showcases a sentence completion exercise for my language learning app. 
 
+## Demo
+
+[![Watch the project demo](https://img.youtube.com/vi/2T2Nm6O3o_c/0.jpg)](https://www.youtube.com/shorts/2T2Nm6O3o_c)
+
 ## Tools & Technologies
 
 * SwiftUI
@@ -25,7 +29,3 @@ I am happy about how the implementation turned out; I've learned a lot about how
 For the time being, I solved the problem of placing a dotted line corresponding to the longest word by placing a hidden button and adding a Line view.
 This is not the most concise and elegant approach, so if I had to improve the code this would be a priority as it worsens the readability for collaboration.
 Lastly, I would make sure that there is more contrast between colors, and that all elements are visible.
-
-## Demo
-
-[![Watch the project demo](https://img.youtube.com/vi/2T2Nm6O3o_c/0.jpg)](https://www.youtube.com/shorts/2T2Nm6O3o_c)
