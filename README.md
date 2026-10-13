@@ -4,7 +4,7 @@ This code example showcases a sentence-completion exercise for my language learn
 
 ## Demo
 
-[![Watch the project demo](https://img.youtube.com/vi/2T2Nm6O3o_c/0.jpg)](https://www.youtube.com/shorts/2T2Nm6O3o_c)
+[![Watch the project demo](https://img.youtube.com/vi/re9BDcz0XZY/0.jpg)](https://www.youtube.com/shorts/re9BDcz0XZY)
 
 ## Tools & Technologies
 
