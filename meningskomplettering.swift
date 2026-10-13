@@ -29,25 +29,7 @@ struct SentenceView: View {
                             .fontWeight(.medium)
                     // Else place a dotted line that corresponds to the longest word amongst the options
                     } else {
-                        ZStack (alignment: .bottom) {
-                            // Hidden button with the length of the longest word
-                            Button(action: {
-                                return
-                            }, label: {
-                                Text("\(viewModel.longestWord)")
-                                    .font(.system(size: 22))
-                                    .foregroundStyle(.white)
-                                    .fontWeight(.medium)
-                                    .padding(10)
-                                    .background(.gray)
-                            })
-                            .zIndex(3)
-                            .hidden()
-                            Line()
-                                .stroke(style: .init(dash: [4]))
-                                .frame(height: 1)
-                                .foregroundStyle(.orange.opacity(0.7))
-                        }
+                        DottedLineView(longesWord: sentence.longestWord)
                         .padding(.horizontal, 5)
                     }
                 }
@@ -243,4 +225,28 @@ struct TextBox: Layout {
         }
         return lineHeight
     }
+}
+struct DottedLineView: View {
+var longestWord: String
+ 
+ var body: some View {
+    ZStack (alignment: .bottom) {
+        // 1. Item - Text
+        Text("\(longestWord)")
+            .font(.system(size: 22))
+            .foregroundStyle(.white)
+            .fontWeight(.medium)
+            .padding(10)
+            .background(.gray)
+        
+        .zIndex(3)
+        .hidden()
+
+        // 2. Item - Line where Text.width = Line.width
+        Line()
+            .stroke(style: .init(dash: [4]))
+            .frame(height: 1)
+            .foregroundStyle(.orange.opacity(0.7))
+    }
+  } 
 }
